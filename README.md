@@ -1,4 +1,4 @@
-# Unit 19 React Homework: ☢ reactional Employee Directory
+# Unit 19 React Homework: ☢ reactive Employee Directory
 
 ## Overview
 
