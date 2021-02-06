@@ -7,7 +7,7 @@ export default function App(){
     const [q,setQ]=useState('')
 
     useEffect(()=>{
-        fetch('https://randomuser.me/')
+        fetch('https://randomuser.me/api/?results=25')
         .then(response=>response.json())
         .then(json=>setData(json));
     },[]); 
