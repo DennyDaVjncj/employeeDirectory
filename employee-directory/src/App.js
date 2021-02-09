@@ -2,7 +2,7 @@
 import './App.css';
 import React from 'react';
 import HomePage from './HomePage';
-//import Navbar from './Navbar'
+
 
 function App() {
   return (
@@ -12,6 +12,6 @@ function App() {
           <HomePage/>
         {/* </Wrapper> */}
       </div>
-  );
-}//this file represents the heirachy of the application
+   )
+ }//this file represents the heirachy of the application
 export default App;
