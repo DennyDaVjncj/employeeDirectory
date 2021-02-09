@@ -32,7 +32,7 @@ export default function HomePage() {
                 </Form.Text>
             </>
             
-            <p>I just wanna see sum</p>
+            <p>I just wanna see sum: {{employees.cell}}</p>
             
         </div>
             
