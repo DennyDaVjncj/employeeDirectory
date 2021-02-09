@@ -1,21 +1,21 @@
-import React,{useState,useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Form from 'react-bootstrap/Form';
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
 
 export default function HomePage() {
-    const [employees,setEmployees]=useState([])//need to improve understanding|'employees' will come into play when I render specified data
-    const [search,setSearch]=useState('');//improve understanding
+    const [employees, setEmployees] = useState([])//need to improve understanding|'employees' will come into play when I render specified data
+    const [search, setSearch] = useState('');//improve understanding
 
-    useEffect(()=>{
+    useEffect(() => {
         fetch('https://randomuser.me/api/?results=25&nat=US')
-            .then(response=>response.json())
-            .then(json=>{
-                setEmployees(json.results) 
+            .then(response => response.json())
+            .then(json => {
+                setEmployees(json.results)
                 console.log(json.results)
             })
-    },[]);
+    }, []);
     //the definition of the rendered website
     return (
         <div>
@@ -31,11 +31,17 @@ export default function HomePage() {
                     The World's first contactless search bar
                 </Form.Text>
             </>
-            
-            <p>I just wanna see sum: {{employees.cell}}</p>
-            
+
+            <p>I just wanna see sum: shootin' shots... swisssh</p>
+            <>
+                {employees.map(userSearch => (
+                    <p key={userSearch.cell}>{userSearch.cell}</p>
+                ))}
+            </>
+
+
         </div>
-            
+
     )
 }
 //data being fetched successfully
