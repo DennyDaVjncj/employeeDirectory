@@ -31,6 +31,7 @@ export default function HomePage() {
                     The World's first contactless search bar
                 </Form.Text>
             </>
+            
             <p>I just wanna see sum</p>
             
         </div>
