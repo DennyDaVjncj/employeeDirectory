@@ -13,6 +13,5 @@ function App() {
         {/* </Wrapper> */}
       </div>
   );
-}
-
+}//this file represents the heirachy of the application
 export default App;
