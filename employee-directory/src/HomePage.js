@@ -30,9 +30,13 @@ export default function HomePage() {
                 <Form.Text id="passwordHelpBlock" muted>
                     The World's first contactless search bar
                 </Form.Text>
+            </>            
+            <p>Shootin' shots... swissh</p>
+            <>
+                {employees.map(search=>(
+                    <p key={search.cell}>{search.cell}</p>
+                ))}
             </>
-            
-            <p>I just wanna see sum: {}</p>
             
         </div>
             
